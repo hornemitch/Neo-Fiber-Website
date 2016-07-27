@@ -150,9 +150,6 @@
                     <div id="gmap_size" style="overflow:hidden;height:350px;width:auto">
                         <div id="gmap_canvas" style="height:580px;width:auto">
                         </div>
-                        <style>
-
-                        </style>
                     </div>
                     <script type="text/javascript">
                         function init_map(){var e={zoom: 17, center: new google.maps.LatLng(-26.672985731557528, 27.928459025825532), mapTypeId: google.maps.MapTypeId.ROADMAP}; map=new google.maps.Map(document.getElementById("gmap_canvas"), e), marker=new google.maps.Marker({map: map, position: new google.maps.LatLng(-26.672985731557528, 27.928459025825532)}), infowindow=new google.maps.InfoWindow({content: "<b>AeP IT Services<\/b><br/>21 Meriman Avenue <br/> vereeniging"}), google.maps.event.addListener(marker, "click", function(){infowindow.open(map, marker)}), infowindow.open(map, marker)}google.maps.event.addDomListener(window, "load", init_map);
@@ -161,17 +158,14 @@
                 <div class="col-md-6">
                     <div class="list-group">
                         <ul>
-                            <li>
-                                <i class="fa fa-home fa-fw fa-2x" aria-hidden="true"></i>&nbsp; <h4>Home</h4>
+                            <li class="flex-div">
+                                <i class="fa fa-map-marker fa-fw fa-2x" aria-hidden="true"></i>&nbsp; <h4>21 Meriman Avenue<br />Vereeniging<br />Gautenng</h4>
                             </li>
-                            <li>
-                                <i class="fa fa-book fa-fw fa-2x" aria-hidden="true"></i>&nbsp; <h4>Library</h4>
+                            <li class="flex-div">
+                                <i class="fa fa-phone fa-fw fa-2x" aria-hidden="true"></i>&nbsp; <h4>016-422-6230</h4>
                             </li>
-                            <li>
-                                <i class="fa fa-pencil fa-fw fa-2x" aria-hidden="true"></i>&nbsp; <h4>Applications</h4>
-                            </li>
-                            <li>
-                                <i class="fa fa-cog fa-fw fa-2x" aria-hidden="true"></i>&nbsp; <h4>Settings</h4>
+                            <li class="flex-div">
+                                <i class="fa fa-envelope fa-fw fa-2x" aria-hidden="true"></i>&nbsp; <h4><a href="mailto:admin@aepit.co.za?Subject=Hello%20again" target="_top">admin@aepit.co.za</a></h4>
                             </li>
                         </ul>
                     </div>

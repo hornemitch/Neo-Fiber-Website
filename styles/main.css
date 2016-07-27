@@ -81,7 +81,7 @@ nav{
 
 #clients .client-box{
     border-radius: 15px;
-    box-shadow: 5px 5px 10px #222 inset;
+    box-shadow: 5px 5px 15px #222 inset;
 }
 #clients .client-box h1{
     text-align: center;
@@ -93,6 +93,10 @@ nav{
 }
 
 /*  Contact styles  */
+#contact{
+    padding-bottom: 30px;
+}
+
 #contact h1{
     text-align: center;
 }
@@ -101,7 +105,18 @@ nav{
 }
 
 /*  Map Styling */
+#gmap_size{
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #222;
+}
+
 #gmap_canvas img{
+    background: 0 0!important;
     max-width: none!important;
-    background: 0 0!important
+}
+
+/*  Flex Styling*/
+.flex-div{
+    display: flex;
+    align-items: center;
 }
