@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neo Fiber</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+</head>
+<body>
+    <a class="nav-control" onclick="operateNav()">
+        <i class="fa fa-bars nav-closed-control"></i>
+    </a>
+    <nav class="nav-closed">
+        <div class="heading">
+            <h1>Neo-Fiber</h1>
+        </div>
+        <div class="nav-body">
+            <ul>
+                <li><a href="#">Link tag</a></li>
+                <li><a href="#">Link tag</a></li>
+                <li><a href="#">Link tag</a></li>
+                <li><a href="#">Link tag</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="home">
+        <header>
+            <h1>Neo-Fiber</h1>
+        </header>
+
+        <div class="container-fluid">
+            <img src="./img/image1.jpg" class="main-img">
+        </div>
+
+    </div>
+
+    <div id="packages">
+        <div class="container">
+            <div class="row">
+                <h1>Internet Packages</h1>
+            </div>
+            <div class="row">
+
+                <div id="package-1">
+                    <div class="col-md-12">
+                        <h3>Package 1</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Line size</h4>
+                        <h4>Data size</h4>
+                        <h4>Price</h4>
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div id="package-2">
+                    <div class="col-md-12">
+                        <h3>Package 2</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Line size</h4>
+                        <h4>Data size</h4>
+                        <h4>Price</h4>
+
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div id="package-3">
+                    <div class="col-md-12">
+                        <h3>Package 3</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Line size</h4>
+                        <h4>Data size</h4>
+                        <h4>Price</h4>
+
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div id="package-4">
+                    <div class="col-md-12">
+                        <h3>Package 4</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Line size</h4>
+                        <h4>Data size</h4>
+                        <h4>Price</h4>
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="clients">
+        <div class="container-fluid">
+            <div class="col-md-10 col-md-offset-1 client-box">
+                <div class="row">
+                    <h1>Some of our Clients</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="./img/clients/img1.png" alt="" class="client-logo">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./img/clients/img1.png" alt="" class="client-logo">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./img/clients/img1.png" alt="" class="client-logo">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./img/clients/img1.png" alt="" class="client-logo">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="./img/clients/img1.png" alt="" class="client-logo">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./img/clients/img1.png" alt="" class="client-logo">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./img/clients/img1.png" alt="" class="client-logo">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./img/clients/img1.png" alt="" class="client-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <h1>Contact us</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBBLTc-a3fMxftHt9BLoJDLgDG59NWx9VY&sensor=false" type="text/javascript"></script>
+                    <div id="gmap_size" style="overflow:hidden;height:350px;width:auto">
+                        <div id="gmap_canvas" style="height:580px;width:auto">
+                        </div>
+                        <style>
+
+                        </style>
+                    </div>
+                    <script type="text/javascript">
+                        function init_map(){var e={zoom: 17, center: new google.maps.LatLng(-26.672985731557528, 27.928459025825532), mapTypeId: google.maps.MapTypeId.ROADMAP}; map=new google.maps.Map(document.getElementById("gmap_canvas"), e), marker=new google.maps.Marker({map: map, position: new google.maps.LatLng(-26.672985731557528, 27.928459025825532)}), infowindow=new google.maps.InfoWindow({content: "<b>AeP IT Services<\/b><br/>21 Meriman Avenue <br/> vereeniging"}), google.maps.event.addListener(marker, "click", function(){infowindow.open(map, marker)}), infowindow.open(map, marker)}google.maps.event.addDomListener(window, "load", init_map);
+                    </script>
+                </div>
+                <div class="col-md-6">
+                    <div class="list-group">
+                        <ul>
+                            <li>
+                                <i class="fa fa-home fa-fw fa-2x" aria-hidden="true"></i>&nbsp; <h4>Home</h4>
+                            </li>
+                            <li>
+                                <i class="fa fa-book fa-fw fa-2x" aria-hidden="true"></i>&nbsp; <h4>Library</h4>
+                            </li>
+                            <li>
+                                <i class="fa fa-pencil fa-fw fa-2x" aria-hidden="true"></i>&nbsp; <h4>Applications</h4>
+                            </li>
+                            <li>
+                                <i class="fa fa-cog fa-fw fa-2x" aria-hidden="true"></i>&nbsp; <h4>Settings</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
