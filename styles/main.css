@@ -1,6 +1,6 @@
 /*  General Style  */
 body{
-    font-family: 'Audiowide', cursive;
+    font-family: 'Lato', sans-serif;
 }
 
 ul{
@@ -9,6 +9,21 @@ ul{
 
 a{
     outline: 0 !important;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.fa-lightbulb-o{
+    color: yellow;
+    transition: all .3s;
+}
+.fa-gift{
+    color: red;
+    transition: all .3s;
 }
 
 
@@ -33,6 +48,10 @@ nav{
     margin-right: 0;
 }
 
+nav img{
+    width:80%;
+}
+
 .nav-control{
     background: #000;
     border-radius: 0 0 0 20px;
@@ -51,7 +70,7 @@ nav{
 }
 .nav-control:hover,
 .nav-control:active{
-    background: #000080 ;
+    background: #67F300;
     color: #fff;
     cursor: pointer;
     text-shadow: 0 0 10px #fff;
@@ -59,18 +78,297 @@ nav{
 
 /*  Header Style    */
 #home header{
-    background: #000;
+    background: #fff;
     color: #fff;
-    padding: 1px 20px 10px 3%;
+    height: 100px;
+    padding: 0 20px 0 3%;
     text-align: left;
     width: 100%;
 }
 
 #home .main-img{
-    box-shadow: 10px 10px 18px 2px #222;
     height: 550px;
-    margin: 50px 10%;
-    width: 80%;
+    margin: 50px 5%;
+    width: 90%;
+}
+
+/*  Packages style*/
+#packages{
+    background: #999;
+    box-shadow: 5px 5px 12px 1px #222;
+    padding: 10px 0 25px;
+}
+#packages h1{
+    color: #222;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#packages .packages-buttons{
+    text-align:center;
+}
+#packages .packages-buttons button{
+    background: #eee;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #222;
+    color: #000;
+    padding: 10px 10px;
+    text-align:center;
+    transition: all .3s;
+    width: 70%;
+}
+#packages .packages-buttons button:hover{
+    background: #5EEF00;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #222;
+    color: #fff;
+    padding: 10px 10px;
+    text-align:center;
+}
+#packages .packages-buttons button:hover .fa-lightbulb-o,
+#packages .packages-buttons button:hover .fa-gift{
+    color: #fff;
+}
+
+#packages .terminology{
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 12px 1px #222;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    width: 90%;
+}
+#packages .terminology-cover{
+    margin: 10px 5% 25px;
+    max-height: 800px;
+    overflow: hidden;
+    padding: 20px;
+    transition: all .5s ease-out;
+}
+#packages .terminology h2{
+    border-radius: 15px;
+    box-shadow: 8px 4px 15px #222 inset;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#packages .terminology .terms-heading{
+    margin: 10px 0 0;
+}
+#packages .terminology .terms-heading .col-md-2{
+    border-bottom: 1px solid #222;
+    border-radius: 15px;
+    border-right: 1px solid #222;
+    border-top: 1px solid #222;
+}
+#packages .terminology .terms-heading .col-md-8{
+    border-bottom: 1px solid #222;
+    border-left: 1px solid #222;
+    border-radius: 15px;
+    border-top: 1px solid #222;
+}
+
+#packages .terminology .terminology-item{
+    margin: 10px 0;
+}
+#packages .terminology .terminology-item h3{
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+}
+#packages .terminology .terminology-item h4{
+    border-radius: 15px;
+    box-shadow: 5px 5px 12px 1px #222 ;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+#packages .packages-sort{
+    background: #ddd;
+    border-radius: 15px;
+    box-shadow: 5px 5px 12px 1px #222;
+    margin-left: 20%;
+    overflow: hidden;
+    padding: 20px 20px 50px;
+    position: relative;
+    text-align: center;
+    transition: all .5s ease-out;
+    width: 60%;
+}
+#packages .packages-sort-cover{
+    margin: 10px 5% 25px;
+    max-height: 800px;
+    overflow: hidden;
+    padding: 20px;
+    transition: all .5s ease-out;
+}
+#packages .packages-sort h2{
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 12px #222;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#packages .package-sort-button{
+    border: 1px solid #0094FF;
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
+    width: 120px;
+}
+#packages .active{
+    background: #62F100;
+    border: 1px solid #0094FF;
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
+    width: 120px;
+}
+#packages .disabled{
+    border: 1px solid #999;
+    color: #999999;
+    cursor: not-allowed;
+}
+#packages .package-sort-button:hover{
+    background: #0094FF;
+}
+#packages .disabled:hover{
+    background: #fff;
+    color: #999999;
+}
+#packages .left-button{
+    margin-right: -5px;
+}
+#packages .package-sort-button-search{
+    background: #0094FF;
+    border: 1px solid #222;
+    border-radius: 15px;
+    box-shadow: 5px 5px 12px #222;
+    color: #222;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    transition: all .3s;
+}
+#packages .package-sort-button-search:hover{
+    background: #62F100;
+    border: 1px solid #0094FF;
+    color: #fff;
+}
+
+#packages .internet-package{
+    background: #fff;
+    border-radius: 35px;
+    box-shadow: 5px 5px 12px 1px #222;
+    margin: 0 0 20px;
+    padding: 0 15px 20px;
+    width: 95%;
+}
+
+#packages .internet-package .head{
+    border-radius: 35px 35px 0 0;
+    padding-bottom: 25px;
+    position: relative;
+}
+#packages .internet-package .head .top-half{
+    background: #0094FF;
+    border-radius: 35px 35px 0 0;
+    color: #333;
+    height: 100px;
+}
+#packages .internet-package .head .top-half .circle-image{
+    background: #fff;
+    border-radius: 30px 0 30px 0;
+    color: #333;
+    padding: 20px;
+    position: absolute;
+}
+#packages .internet-package .head .top-half .circle-image .fa:hover{
+    cursor: pointer;
+}
+
+#packages .internet-package .head .bottom-half{
+    text-align: center;
+}
+#packages .internet-package .head .bottom-half .circle{
+    background: #fff;
+    border: 5px solid #0094FF;
+    border-radius: 100%;
+    color: #000;
+    display: block;
+    height: 100px;
+    margin-left: 35%;
+    margin-top: -50px;
+    padding: 20px 10px;
+    width: 100px;
+}
+#packages .internet-package .head .bottom-half .circle h4{
+    font-family: 'Coming Soon', cursive;
+    font-size: 1.5em;
+}
+
+#packages .internet-package h3,
+#packages .internet-package h4{
+    text-align: center;
+}
+
+#packages .packages{
+    max-height: 2000px;
+    overflow: hidden;
+    transition: all .4s ease-out;
+}
+
+.close-terminology{
+    background: #000;
+    border-radius: 0 10px 0 10px;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 10px 5px;
+    position: absolute;
+    right:0;
+    top: 0;
+    transition: all .3s;
+}
+.close-terminology:hover{
+    background: #68F300;
+    color: #000;
+    cursor: pointer;
+}
+
+.close-packages{
+    background: #000;
+    border-radius: 0 10px 0 10px;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 10px 5px;
+    position: absolute;
+    right:0;
+    top: 0;
+    transition: all .3s;
+}
+.close-packages:hover{
+    background: #68F300;
+    color: #000;
+    cursor: pointer;
+}
+
+#packages .closed{
+    max-height: 0;
+    padding: 0;
+}
+
+#packages .packages .not-selected{
+    display: none;
 }
 
 /*  Clients styles*/

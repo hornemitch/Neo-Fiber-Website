@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Neo Fiber</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'><link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/animate.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/responsive.css">
 </head>
@@ -15,7 +16,9 @@
     </a>
     <nav class="nav-closed">
         <div class="heading">
-            <h1>Neo-Fiber</h1>
+            <a href="#home">
+                <img src="./img/logo.jpg">
+            </a>
         </div>
         <div class="nav-body">
             <ul>
@@ -30,73 +33,703 @@
 
     <div id="home">
         <header>
-            <h1>Neo-Fiber</h1>
         </header>
 
         <div class="container-fluid">
-            <img src="./img/image1.jpg" class="main-img">
+            <img src="./img/logo.jpg" class="main-img">
         </div>
 
     </div>
 
     <div id="packages">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <h1>Internet Packages</h1>
+                <h1>Our Products</h1>
             </div>
-            <div class="row">
 
-                <div id="package-1">
-                    <div class="col-md-12">
-                        <h3>Package 1</h3>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Line size</h4>
-                        <h4>Data size</h4>
-                        <h4>Price</h4>
-                    </div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
+            <div class="packages-buttons row">
+                <div class="col-md-4 col-md-offset-2">
+                    <button onclick="openTerminology()">
+                        <h3>Internet Terminology</h3>
+                        <i class="fa fa-lightbulb-o fa-2x"></i>
+                    </button>
                 </div>
-                <div id="package-2">
+                <div class="col-md-4">
+                    <button onclick="openPackages()">
+                        <h3>Our Packages</h3>
+                        <i class="fa fa-gift fa-2x"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="terminology-cover closed animated slideOutRight">
+                <div class="row terminology">
+                    <i class="close-terminology fa fa-times" onclick="closeTerminology()"></i>
                     <div class="col-md-12">
-                        <h3>Package 2</h3>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Line size</h4>
-                        <h4>Data size</h4>
-                        <h4>Price</h4>
+                        <div class="row">
+                            <h2>Internet Services Terminology </h2>
+                       </div>
+
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <h4>This section is to help clarify some of the terms used by internet service providers to describe the packages and internet services they provide. In other words, this section is dedicated to the user specifically - No one wants to pay for they don't even understand</h4>
+                             </div>
+                        </div>
+
+                        <div class="row terms-heading">
+                            <div class="col-md-2 col-md-offset-1">
+                                <h4>Terms</h4>
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Explanation</h4>
+                            </div>
+                        </div>
+
+                        <div class="terminology-item row">
+                            <div class="col-md-2 col-md-offset-1">
+                                <h3>Capped</h3>
+                            </div>
+                            <div class="col-md-8">
+                                <h4>The total amount of data you are able to download and upload will be limited. If this limit is reached during the term (Always a monthly period), your internet will be suspended until the start of the new period.</h4>
+                            </div>
+                        </div>
+                        <div class="terminology-item row">
+                            <div class="col-md-2 col-md-offset-1">
+                                <h3>Uncapped</h3>
+                            </div>
+                            <div class="col-md-8">
+                                <h4>The total amount of data you are able to download and upload will not be limited, however your data could be subject to a fair usage policy. There is no point of internet usage where your internet will be turned off due to data usage.</h4>
+                            </div>
+                        </div>
+                        <div class="terminology-item row">
+                            <div class="col-md-2 col-md-offset-1">
+                                <h3>Fair Usage</h3>
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Fair usage is a soft cap placed on uncapped internet packages. Once this data usage has been reached within the month, your internet will be throttled, but still on - Thus your internet will be slower, but not offline.</h4>
+                            </div>
+                        </div>
+                        <div class="terminology-item row">
+                            <div class="col-md-2 col-md-offset-1">
+                                <h3>Throttled</h3>
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Once an uncapped internet line has reached its fair usage policy soft cap, the line wil be slowed by around half of its normal bandwidth, meaning that its speed will decrease to about half of its normal speed.</h4>
+                            </div>
+                        </div>
 
                     </div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
                 </div>
-                <div id="package-3">
-                    <div class="col-md-12">
-                        <h3>Package 3</h3>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Line size</h4>
-                        <h4>Data size</h4>
-                        <h4>Price</h4>
+            </div>
 
+            <div class="packages-sort-cover closed animated slideOutRight">
+                <div class="packages-sort">
+                <i class="close-packages fa fa-times" onclick="closePackages()"></i>
+                <h2>Sort Packages</h2>
+                <div class="row animated">
+                    <div class="row">
+                        <h4>Package Type</h4>
+                        <button class="package-sort-button left-button type-button"  value="business">Business</button>
+                        <button class="package-sort-button left-button type-button active"  value="all">All</button>
+                        <button class="package-sort-button type-button"  value="home">Home</button>
                     </div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
+                    <div class="row">
+                        <h4>Line Shape</h4>
+                        <button class="package-sort-button left-button line-button" value="shaped">Shaped</button>
+                        <button class="package-sort-button left-button line-button active" value="all">All</button>
+                        <button class="package-sort-button line-button unshaped" value="unshaped">Unshaped</button>
+                    </div>
+                    <div class="row">
+                        <h4>Data Limitation</h4>
+                        <button class="package-sort-button left-button disabled data-button" value="capped" disabled>Capped</button>
+                        <button class="package-sort-button left-button data-button active" value="all">All</button>
+                        <button class="package-sort-button data-button" value="uncapped">Uncapped</button>
+                    </div>
+                    <div class="row">
+                        <button class="package-sort-button-search">View Packages</button>
+                    </div>
                 </div>
-                <div id="package-4">
-                    <div class="col-md-12">
-                        <h3>Package 4</h3>
+            </div>
+            </div>
+
+            <div class="packages closed">
+                <div class="col-md-3">
+                    <div class="internet-package business unshaped uncapped not-selected">
+                        <div class="head">
+                            <div class="row top-half">
+                                <div class="circle-image">
+                                    <i class="fa fa-industry fa-2x" data-toggle="tooltip" title="Business Package"></i>
+                                </div>
+                                <h3>Package 1</h3>
+                            </div>
+                            <div class="row bottom-half">
+                                <div class="circle">
+                                    <h4>R1 400</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Unshaped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>Uncapped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>2 MB Download</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>2 MB Upload</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>No fair usage policy</h4>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <h4>Line size</h4>
-                        <h4>Data size</h4>
-                        <h4>Price</h4>
+                </div>
+                <div class="col-md-3">
+                    <div class="internet-package business unshaped uncapped not-selected">
+                        <div class="head">
+                            <div class="row top-half">
+                                <div class="circle-image">
+                                    <i class="fa fa-industry fa-2x" data-toggle="tooltip" title="Business Package"></i>
+                                </div>
+                                <h3>Package 2</h3>
+                            </div>
+                            <div class="row bottom-half">
+                                <div class="circle">
+                                    <h4>R1 800</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Unshaped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>Uncapped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>3 MB Download</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>3 MB Upload</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>No fair usage policy</h4>
+                        </div>
                     </div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
+                </div>
+                <div class="col-md-3">
+                    <div class="internet-package business unshaped uncapped not-selected">
+                        <div class="head">
+                            <div class="row top-half">
+                                <div class="circle-image">
+                                    <i class="fa fa-industry fa-2x" data-toggle="tooltip" title="Business Package"></i>
+                                </div>
+                                <h3>Package 3</h3>
+                            </div>
+                            <div class="row bottom-half">
+                                <div class="circle">
+                                    <h4>R2 300</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Unshaped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>Uncapped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>4 MB Download</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>4 MB Upload</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>No fair usage policy</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="internet-package business unshaped uncapped not-selected">
+                        <div class="head">
+                            <div class="row top-half">
+                                <div class="circle-image">
+                                    <i class="fa fa-industry fa-2x" data-toggle="tooltip" title="Business Package"></i>
+                                </div>
+                                <h3>Package 4</h3>
+                            </div>
+                            <div class="row bottom-half">
+                                <div class="circle">
+                                    <h4>R2 600</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Unshaped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>Uncapped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>5 MB Download</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>5 MB Upload</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>No fair usage policy</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="internet-package business unshaped uncapped not-selected">
+                        <div class="head">
+                            <div class="row top-half">
+                                <div class="circle-image">
+                                    <i class="fa fa-industry fa-2x" data-toggle="tooltip" title="Business Package"></i>
+                                </div>
+                                <h3>Package 5</h3>
+                            </div>
+                            <div class="row bottom-half">
+                                <div class="circle">
+                                    <h4>R2 900</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Unshaped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>Uncapped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>6 MB Download</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>6 MB Upload</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>No fair usage policy</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="internet-package business unshaped uncapped not-selected">
+                        <div class="head">
+                            <div class="row top-half">
+                                <div class="circle-image">
+                                    <i class="fa fa-industry fa-2x" data-toggle="tooltip" title="Business Package"></i>
+                                </div>
+                                <h3>Package 6</h3>
+                            </div>
+                            <div class="row bottom-half">
+                                <div class="circle">
+                                    <h4>R3 200</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Unshaped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>Uncapped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>8 MB Download</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>8 MB Upload</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>No fair usage policy</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="internet-package business shaped uncapped not-selected">
+                        <div class="head">
+                            <div class="row top-half">
+                                <div class="circle-image">
+                                    <i class="fa fa-industry fa-2x" data-toggle="tooltip" title="Business Package"></i>
+                                </div>
+                                <h3>Package 7</h3>
+                            </div>
+                            <div class="row bottom-half">
+                                <div class="circle">
+                                    <h4>R3 400</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Shaped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>Uncapped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>10 MB Download</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>10 MB Upload</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>No fair usage policy</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="internet-package business shaped uncapped not-selected">
+                        <div class="head">
+                            <div class="row top-half">
+                                <div class="circle-image">
+                                    <i class="fa fa-industry fa-2x" data-toggle="tooltip" title="Business Package"></i>
+                                </div>
+                                <h3>Package 8</h3>
+                            </div>
+                            <div class="row bottom-half">
+                                <div class="circle">
+                                    <h4>R4 900</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Shaped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>Uncapped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>20 MB Download</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>20 MB Upload</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>No fair usage policy</h4>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="col-md-3">
+                    <div class="internet-package home shaped uncapped not-selected">
+                        <div class="head">
+                            <div class="row top-half">
+                                <div class="circle-image">
+                                    <i class="fa fa-home fa-2x" data-toggle="tooltip" title="Home Package"></i>
+                                </div>
+                                <h3>Package 9</h3>
+                            </div>
+                            <div class="row bottom-half">
+                                <div class="circle">
+                                    <h4>R 320</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Shaped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>Uncapped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>2 MB Download</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>2 MB Upload</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>55 GB /Monthly fair usage</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="internet-package home shaped uncapped not-selected">
+                        <div class="head">
+                            <div class="row top-half">
+                                <div class="circle-image">
+                                    <i class="fa fa-home fa-2x" data-toggle="tooltip" title="Home Package"></i>
+                                </div>
+                                <h3>Package 10</h3>
+                            </div>
+                            <div class="row bottom-half">
+                                <div class="circle">
+                                    <h4>R 520</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Shaped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>Uncapped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>3 MB Download</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>3 MB Upload</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>60 GB /Monthly fair usage</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="internet-package home shaped uncapped not-selected">
+                        <div class="head">
+                            <div class="row top-half">
+                                <div class="circle-image">
+                                    <i class="fa fa-home fa-2x" data-toggle="tooltip" title="Home Package"></i>
+                                </div>
+                                <h3>Package 11</h3>
+                            </div>
+                            <div class="row bottom-half">
+                                <div class="circle">
+                                    <h4>R 710</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Shaped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>Uncapped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>4 MB Download</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>4 MB Upload</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>65 GB /Monthly fair usage</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="internet-package home shaped uncapped not-selected">
+                        <div class="head">
+                            <div class="row top-half">
+                                <div class="circle-image">
+                                    <i class="fa fa-home fa-2x" data-toggle="tooltip" title="Home Package"></i>
+                                </div>
+                                <h3>Package 12</h3>
+                            </div>
+                            <div class="row bottom-half">
+                                <div class="circle">
+                                    <h4>R 740</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Shaped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>Uncapped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>5 MB Download</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>5 MB Upload</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>70 GB /Monthly fair usage</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="internet-package home shaped uncapped not-selected">
+                        <div class="head">
+                            <div class="row top-half">
+                                <div class="circle-image">
+                                    <i class="fa fa-home fa-2x" data-toggle="tooltip" title="Home Package"></i>
+                                </div>
+                                <h3>Package 14</h3>
+                            </div>
+                            <div class="row bottom-half">
+                                <div class="circle">
+                                    <h4>R 770</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Shaped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>Uncapped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>6 MB Download</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>6 MB Upload</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>75 GB /Monthly fair usage</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="internet-package home shaped uncapped not-selected">
+                        <div class="head">
+                            <div class="row top-half">
+                                <div class="circle-image">
+                                    <i class="fa fa-home fa-2x" data-toggle="tooltip" title="Home Package"></i>
+                                </div>
+                                <h3>Package 14</h3>
+                            </div>
+                            <div class="row bottom-half">
+                                <div class="circle">
+                                    <h4>R 810</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Shaped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>Uncapped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>8 MB Download</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>8 MB Upload</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>80 GB /Monthly fair usage</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="internet-package home shaped uncapped not-selected">
+                        <div class="head">
+                            <div class="row top-half">
+                                <div class="circle-image">
+                                    <i class="fa fa-home fa-2x" data-toggle="tooltip" title="Home Package"></i>
+                                </div>
+                                <h3>Package 15</h3>
+                            </div>
+                            <div class="row bottom-half">
+                                <div class="circle">
+                                    <h4>R 910</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Shaped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>Uncapped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>10 MB Download</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>10 MB Upload</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>100 GB /Month</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="internet-package home shaped uncapped not-selected">
+                        <div class="head">
+                            <div class="row top-half">
+                                <div class="circle-image">
+                                    <i class="fa fa-home fa-2x" data-toggle="tooltip" title="Home Package"></i>
+                                </div>
+                                <h3>Package 16</h3>
+                            </div>
+                            <div class="row bottom-half">
+                                <div class="circle">
+                                    <h4>R2 720</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Shaped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>Uncapped</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>20 MB Download</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>20 MB Upload</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <h4>200 GB /Monthly fair usage</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
